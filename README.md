@@ -42,8 +42,6 @@ Manager](https://github.com/tmux-plugins/tpm).
 
 Edit your `status-left` or `status-right` setting to include one of:
 
-- `#{load_short}` - display the 1min load average
-- `#{load_full}` - display the 1min, 5min and 15min load averages
 - `#{wifi_device}` - display the wifi device name
 - `#{wifi_status}` - display the wifi connection status
 - `#{wifi_ssid}` - display the wifi ssid
