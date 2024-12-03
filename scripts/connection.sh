@@ -26,11 +26,12 @@ vpn_disconnected_icon=""
 vpn_disconnected_fg_color="#[fg=darkred]"
 vpn_disconnected_bg_color="#[fg=red]"
 
+
 get_status() {
     local type
     type=$1
 
-    nmcli --terse device status | grep "${type}" | head -n 1
+    cached_eval nmcli --terse device status | grep "${type}" | head -n 1
 }
 
 print_for_status() {
